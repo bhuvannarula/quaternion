@@ -20,6 +20,7 @@ Transformation (derived from) DualQuaternion class
 
 Transformation*Transformation -> Transformation
 '''
+# The parameters for defining Link are its D-H Parameters.
 link1 = Link([pi/3, 7, 0, pi/2])
 link2 = Link([pi/6, 0, 10, 0])
 link3 = Link([pi*(-40/180), 0, 10, 0])
@@ -48,3 +49,11 @@ end_orient = end.orientation()
 
 # Now, we can print to see the end-point.
 print(end_xyz)
+
+'''
+Output: [0 x y z]
+[[ 0.        ]
+ [ 9.25416578]
+ [16.02868532]
+ [10.26351822]]
+'''
